@@ -1,0 +1,9 @@
+package dev.mqxf.shopping.file;
+
+public enum FileUtilsFactoryType {
+
+	FILE_UTILS_FACTORY_TYPE_SHOPPING_LIST,
+	FILE_UTILS_FACTORY_TYPE_SHOPPING_LIST_DATA,
+	FILE_UTILS_FACTORY_TYPE_NULL,
+
+}
