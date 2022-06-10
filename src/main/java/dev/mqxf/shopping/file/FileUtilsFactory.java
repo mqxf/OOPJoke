@@ -27,4 +27,14 @@ public class FileUtilsFactory extends Factory {
 		}
 	}
 
+	public ShoppingListFileUtils makeShoppingListFileUtils(final String filename) throws IllegalFactoryProductTypeException {
+		if (type == FileUtilsFactoryType.FILE_UTILS_FACTORY_TYPE_SHOPPING_LIST_DATA) {
+			final ShoppingListFileUtils shoppingListFileUtils = new ShoppingListFileUtils(filename);
+			producedShoppingListFileUtils.add(shoppingListFileUtils);
+			return shoppingListFileUtils;
+		} else {
+			throw new IllegalFactoryProductTypeException("This factory produces data files!");
+		}
+	}
+
 }
